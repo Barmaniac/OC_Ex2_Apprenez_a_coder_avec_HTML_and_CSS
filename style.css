@@ -17,31 +17,93 @@ body
 	/* "Arial black", Verdana, sans serif*/	
 	background : url(fonds/fondbleu.jpg) fixed no-repeat;
 	/* background-image: url(fondrose.jpg); */
-
+	width: 100%;
+	max-width: 100%
+	margin: auto;
 }
 
+h2
+{
+	text-decoration: underline;
+}
 /*le div ici me sert pour encadrer le h1 et aussi la phrase d'accorche*/ 
-div
+/*div
 {
 	border: 3px black solid;
 	box-shadow: 6px 6px 6px black;
 	text-align: center;
 }
+*/
 
-#phrasedaccroche
+#mon_CV
 {
-	text-align: center;
-	font
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start; 
 }
 
-h2
+#Lisere
 {
-	color: blue;
-	text-decoration: underline;
+	background-color: #000000;
+	border-radius: 6px 6px 6px 6px;
+	
+	width: 100px;
 }
 
-.photoflottant
+#CV_description
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+#CV_parcours
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	overflow: auto;
+	margin-left: 20px;
+
+}
+
+#Introduction p, #Introduction h1
+{
+	text-align: center;	
+}
+
+#Introduction img
 {
 	float: right;
 }
+
+#mes_etudes
+{
+	display: flex;
+	flex:2;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#mes_experiences
+{
+	display: flex;
+	flex:2;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+
+}
+
+#mes_competences
+{
+	display: flex;
+	flex-direction: column;
+	flex:2;
+	flex-wrap: wrap;
+
+
+}
+
+
 
