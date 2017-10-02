@@ -1,109 +1,98 @@
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('police/opensans_regular_macroman/OpenSans-Regular-webfont.eot');
-    src: url('police/opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('police/opensans_regular_macroman/OpenSans-Regular-webfont.woff2') format('woff2'),
-         url('police/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff'),
-         url('police/opensans_regular_macroman/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('police/opensans_regular_macroman/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body
 {
-	font-family: "open_sansregular", Verdana, sans serif;
-	/* "Arial black", Verdana, sans serif*/	
 	background : url(fonds/fondbleu.jpg) fixed no-repeat;
 	/* background-image: url(fondrose.jpg); */
-	width: 100%;
-	max-width: 100%
-	margin: auto;
+
 }
 
-h2
+/* ------------------------------------------*/
+#moncv_index
 {
-	text-decoration: underline;
-}
-/*le div ici me sert pour encadrer le h1 et aussi la phrase d'accorche*/ 
-/*div
-{
-	border: 3px black solid;
-	box-shadow: 6px 6px 6px black;
-	text-align: center;
-}
-*/
-
-#mon_CV
-{
+	font-family: "Arial", Comic Sans MS, Times New Roman;
+	width:auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start; 
 }
-
-#Lisere
+/* ------------------------------------------*/
+/* mon menu ---------------------------------*/
+nav
 {
 	background-color: #000000;
-	border-radius: 6px 6px 6px 6px;
-	
+	border-radius: 6px 6px 6px 6px;	
 	width: 100px;
 }
 
-#CV_description
+@media all and (max-width: 1024px)
 {
+  nav
+  {
+  	display:none;
+  }	
+}
+
+/* contenu de mon CV --------------------------------------*/
+#CV_body
+{
+	margin-left: 15px;
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;
+	flex: 1;
 }
-
-#CV_parcours
-{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	overflow: auto;
-	margin-left: 20px;
-
-}
-
-#Introduction p, #Introduction h1
-{
-	text-align: center;	
-}
-
-#Introduction img
+/* --------------------------------------------------------*/
+/* Entete de mon CV ---------------------------------------*/
+header img 
 {
 	float: right;
+	margin-right: 20px;
 }
 
-#mes_etudes
+#phrasedaccroche
+{
+	font-style: italic;
+}
+/* --------------------------------------------------------*/
+/* Description --------------------------------------------*/
+section
 {
 	display: flex;
-	flex:2;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-#mes_experiences
+@media all and (max-width: 1024px)
 {
-	display: flex;
-	flex:2;
-	flex-direction: column;
-	flex-wrap: wrap;
-
-
+  section
+  {
+  	flex-direction: column;
+  }	
 }
 
-#mes_competences
+section h1
+{
+	text-decoration: underline;
+}
+
+section .periode
+{
+	font-weight: bold;
+}
+
+article
 {
 	display: flex;
 	flex-direction: column;
-	flex:2;
+	flex:1;
 	flex-wrap: wrap;
-
-
 }
+
+#mes_competences li
+{
+	margin-top: 10px;
+}
+
+/* --------------------------------------------------------*/
+
 
 
 

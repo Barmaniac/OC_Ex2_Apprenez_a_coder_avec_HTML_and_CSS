@@ -8,16 +8,16 @@
 
     <body>
 
-        <div id="mon_CV">
+        <div id="moncv_index">
 
-            <div id="Lisere">
-                <!-- Pour le moment le contenu ici est vide. Peut etre completer pour y mettre un menu par exemple. En tout cas, ce bloc me sert notamment dans le fichier CSS pour faire apparaitre la lisere. -->
+            <!-- mon menu lisere -->
+            <nav>
+                <!-- Pour le moment le contenu ici est vide. Peut etre completer pour y mettre un menu par exemple. En tout cas, ce bloc me sert notamment dans le fichier CSS pour faire apparaitre la lisere. -->            
+            </nav>
 
-            </div>
+            <div id="CV_body">
 
-            <div id="CV_description">
-
-        	   <div id="Introduction">
+        	    <header>
         	 		<!-- Ajout d'une photo de profile pour mon CV -->
         	 		<!-- Ajoute une photo et prevois un moyen pour l'agrandir quand on clique dessus ! --> 
         	 		<p><img src="profile/imagedecv_ppf.jpg" class="photoflottant" alt="Photo du CV" title="Clique ici pour agrandir la photo"></p>
@@ -26,44 +26,46 @@
         	    	<h1> Barmaniac </h1>
         	    	<!-- Indique une courte phrase qui te décrit -->
         	    	<p id="phrasedaccroche"> Ma polyvalence n'a d'égale ma curiosité </p>
-            	</div>
+            	</header>
 
-            	<!-- Les differentes catégories pour un CV classique -->
-            	
-                <div id="CV_parcours">
-                    <div id="mes_etudes">
+    	
+                <section>
 
-                        <h2> Mes études </h2>
+                    <article id="mes_etudes">
 
-                    	<ul>
-                    		<li> Sep. 2013 - Sep. 2014 : Master 2</li>
-                                <p>Master 2 Ecole IAE Lyon 3</p>
-                    		<li> Sep. 2010 - Sep. 2013 : Ecole d'ingénieur</li>
-                                <p>ECAM Génie Mécanique et Industriel spécialité Lean manufacturing à Lyon </p>
-                    		<li> Sep. 2008 - Sep. 2010 : DUT </li>
-                                <p> DUT Génie Mecanique et Productique Aix-en-Provence </p>
-
-                    	</ul>
-                    </div>
-
-                    <div id="mes_experiences">
-
-                    	<h2> Mon expérience </h2>
+                        <h1> Mes études </h1>
 
                     	<ul>
-                    		<li> Sep. 2013 - Sep. 2014 : STMicrolectronics</li>
-                                <p>  CMP Repair leader </p>
-                    		<li> Sep. 2010 - Sep. 2013 : STMicroelectronics </li>
-                                <p>  CMP Repair leader </p>
-                    		<li> Sep. 2008 - Sep. 2010 : EDF </li>
-                                <p>  Technicien de maintenance </p>
+                    		<li class="periode"> Sep. 2013 - Sep. 2014</li>
+                                <p>Master 2, en Management de la qualité et de la logistique à l'IAE Lyon 3</p>
+                    		<li class="periode"> Sep. 2010 - Sep. 2013</li>
+                                <p>Ecole d'ingénieur en Génie Mécanique et Industriel spécialité Lean manufacturing à Lyon à l'ECAM Lyon </p>
+                    		<li class="periode"> Sep. 2008 - Sep. 2010</li>
+                                <p> DUT Génie Mecanique et Productique à Aix-en-Provence </p>
 
                     	</ul>
 
-                    </div>
+                    </article>
 
-                    <div id="mes_competences">
-                    	<h2> Mes compétences </h2>
+                    <article id="mes_experiences">
+
+                    	<h1> Mon expérience </h1>
+
+                    	<ul>
+                    		<li class="periode"> Sep. 2013 - Sep. 2014</li>
+                                <p>  CMP Process ingénieur à STMicrolectronics, Crolles</p>
+                    		<li class="periode"> Sep. 2010 - Sep. 2013 </li>
+                                <p>  CMP Repair leader à STMicrolectronics, Crolles</p>
+                    		<li class="periode"> Sep. 2008 - Sep. 2010</li>
+                                <p>  Technicien de maintenance, Robinetterie et Valve, EDF Tricastin</p>
+
+                    	</ul>
+
+                    </article>
+
+                    <article id="mes_competences">
+
+                    	<h1> Mes compétences </h1>
 
                     	<ul>
                     		<li> Comprendre le web </li>
@@ -72,10 +74,15 @@
                             <li> HTML et CSS (en cours !)  </li>
 
                     	</ul>
-                    </div>
-                </div>
-            </div>    
+
+                    </article>
+
+                </section> 
+
+            </div> 
+
         </div>
 
     </body>
+
 </html>
